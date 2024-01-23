@@ -33,7 +33,8 @@ def create_task():
     tasks.append(new_task)
     task_id_control += 1
     return jsonify({
-        "message": "Nova tarefa criada com sucesso."
+        "message": "Nova tarefa criada com sucesso.",
+        "id": new_task.id
     }), 201
 
 
